@@ -1,5 +1,16 @@
 export const projects = [
   {
+    id: 10,
+    title: "React Job Portal",
+    description:
+      "A React Job Portal website built using React, Supabase and Type Script",
+    img: "/projects/p10.png",
+    tags: ["React Js", "Supabase", "Type Script"],
+
+    liveLink: "https://top-hire.vercel.app/",
+    gitLink: "https://github.com/rohitumadi/top-hire",
+  },
+  {
     id: 9,
     title: "Next Js Chat App",
     description:
