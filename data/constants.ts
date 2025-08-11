@@ -2,6 +2,7 @@ export const projects = [
   {
     id: 10,
     title: "React Job Portal",
+
     description:
       "A React Job Portal website built using React, Supabase and Type Script",
     img: "/projects/p10.png",
