@@ -4,7 +4,7 @@ export const projects = [
     title: "Node Js URL Shortener",
 
     description:
-      "A Node Js URL Shortener built using Node Js, Express and MongoDB",
+      "A Node Js URL Shortener built using Node Js, Express and Postgres",
     img: "/projects/p11.png",
     tags: ["Node Js", "Express", "Postgres", "Type Script"],
     gitLink: "https://github.com/rohitumadi/node-js-url-shortner",
