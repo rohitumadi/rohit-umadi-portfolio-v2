@@ -28,7 +28,10 @@ const page = () => {
                 {project.description}
               </CardItem>
               <CardItem translateZ="100" className="w-full mt-4">
-                <Link href={project.liveLink} target="__blank">
+                <Link
+                  href={project.liveLink || project.gitLink}
+                  target="__blank"
+                >
                   <Image
                     src={project.img}
                     height="1000"
@@ -51,22 +54,25 @@ const page = () => {
                 ))}
               </div>
               <div className="flex justify-center items-center ">
-                <CardItem
-                  translateZ={20}
-                  as={Link}
-                  href={project.liveLink}
-                  target="__blank"
-                  className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
-                >
-                  <Tooltip>
-                    <TooltipTrigger asChild>
-                      <FaLink size={20} />
-                    </TooltipTrigger>
-                    <TooltipContent>
-                      <p>Live Link</p>
-                    </TooltipContent>
-                  </Tooltip>
-                </CardItem>
+                {project.liveLink && (
+                  <CardItem
+                    translateZ={20}
+                    as={Link}
+                    href={project.liveLink}
+                    target="__blank"
+                    className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
+                  >
+                    <Tooltip>
+                      <TooltipTrigger asChild>
+                        <FaLink size={20} />
+                      </TooltipTrigger>
+                      <TooltipContent>
+                        <p>Live Link</p>
+                      </TooltipContent>
+                    </Tooltip>
+                  </CardItem>
+                )}
+
                 <CardItem
                   translateZ={20}
                   as={Link}
