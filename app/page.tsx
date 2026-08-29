@@ -42,8 +42,8 @@ export default function Home() {
         </h1>
         <p className="mb-5 text-base text-white sm:text-lg lg:text-xl">
           <Highlight className="text-black dark:text-white">
-            A passionate Front end engineer with an experience in Fullstack
-            engineering.
+            Full-stack developer building scalable production systems with
+            React, Next.js, Node.js, Spring Boot, and cloud technologies on GCP.
           </Highlight>
         </p>
         <Cover className="">
